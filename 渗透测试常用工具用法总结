@@ -1,0 +1,6 @@
+1、[Burpsuite神器常用功能使用方法总结](http://www.cnblogs.com/nieliangcai/p/6689915.html)
+2、wvs简单使用
+3、弱口令检查
+4、hydra
+补充：如果hydra对某个ip列表进行破解
+可使用如下命令：hydra -L userlist.txt -P passwdlist.txt -M ip.txt ssh
