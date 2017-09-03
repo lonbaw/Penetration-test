@@ -1,0 +1,6 @@
+一条命令足矣：
+nmap -sS -P0 -sV -p1-65535 192.168.31.0/24 -oN - | python nmaptocsv.py -o 192.168.31.0.csv
+
+将扫描结果输出到文档
+如果是大量网段，则可使用ip列表，对应命令如下：
+nmap -sS -P0 -sV -P 1-65535 -iL IP.TXT -oN - | python nmaptocsv.py -o 输出.csv
